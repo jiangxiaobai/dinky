@@ -357,6 +357,9 @@ cd dinky-release-${FLINK-VERSION}-${DINKY-VERSION}/deploy/kubernetes/helm/dinky
 helm uninstall dinky  -n dinky
 ```
 
+### 注意事项
+1、原镜像中没有auto.sh脚本文件，需要从下载安装包中复制挂载进去。
+2、原镜像中没有数据库连接jar包，需要自行下载对应的jar包，并挂载至镜像中的/opt/dinky/customJar目录
 
 
 
